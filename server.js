@@ -4,15 +4,14 @@ var express = require('express');
 var app  = express();
 var mongoose = require('mongoose');
 
-var url = 'mongodb+srv://localhost:27017/test';
+var url = 'mongodb://127.0.0.1:27017/bookregister';
 var bodyParser = require('body-parser');
 
 
-mongoose.connect(url, function(err, db) {
-  if (err) throw err;
-  console.log("Database created!");
-  db.close();
-});
+mongoose.connect(url, () => { console.log('Connected to the db')})
+		.catch(err => {
+		  console.log(err);
+		});
 
 
 app.use(express.static(__dirname + '/vue')); 

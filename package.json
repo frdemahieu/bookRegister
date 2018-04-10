@@ -1,0 +1,19 @@
+{
+  "name": "BookRegister",
+  "version": "1.0.0",
+  "description": "An application that will keep all books and material usefull for the formation",
+  "main": "index.js",
+  "author": "Ezo inc.",
+  "license": "MIT",
+  "dependencies": {
+    "angularjs": "^0.0.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.5",
+    "mongoose": "^5.0.14",
+    "nodemon": "^1.17.3",
+    "server": "^1.0.18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
